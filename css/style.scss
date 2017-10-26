@@ -1,0 +1,329 @@
+$navbar_space: 3.5rem;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: gray
+}
+
+.navbar_main {
+    padding: 20px 200px;
+    a {
+        border-bottom: 1px solid rgba(252, 227, 138, 0);
+        transition: all 100ms ease-in-out;
+    }
+    a:hover {
+        color: rgb(252, 227, 138);
+        border-bottom: 1px solid rgb(252, 227, 138);
+    }
+}
+
+.navbar_logo_name {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.navbar_items {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    li {
+        margin: 5px 10px;
+    }
+}
+
+.fixed-me {
+    background-color: #fff;
+    padding: 0 10px !important;
+    margin-bottom: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 888;
+    width: 100%;
+    border-bottom: 3px solid rgb(243, 129, 129) !important;
+    transition: all 1s;
+    .navbar_logo_name {
+        color: black;
+    }
+    .navbar_items {
+        a {
+            color: rgb(51, 51, 51) !important;
+        }
+    }
+}
+
+.navbar-me {
+    transition: all 0.7s;
+}
+
+.first_section {
+    padding-top: $navbar_space;
+    height: 100vh;
+    text-align: center;
+    background-image: url("../img-assets/picture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.text-kaushan {
+    padding-bottom: 20px;
+    font-size: 56px;
+    font-family: "Kaushan Script", cursive;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.main-text-header {
+    font-size: 120px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    text-align: center;
+}
+
+.spacer-line {
+    margin: 40px auto;
+    border-bottom: 2px solid white;
+    width: 80px;
+}
+
+.learn-more_button {
+    padding: 8px 25px;
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.learn-more_button:hover {
+    color: rgb(243, 129, 129);
+    border-color: rgb(243, 129, 129);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.fix-to-bottom {
+    position: absolute;
+    bottom: 0;
+    .spacer-line {
+        margin: 15px 0;
+        width: 150px;
+    }
+}
+
+.first_section_item {
+    color: rgba(255, 255, 255, 0.702);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    transition: all 100ms ease-in-out;
+}
+
+.first_section_item:hover {
+    p {
+        color: white;
+    }
+    .spacer-line {
+        border-color: #d51e1e;
+    }
+    cursor: pointer;
+}
+
+// SECOND SECTION
+.second_section {
+    position: relative;
+    padding-top: $navbar_space;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    .text-kaushan {
+        font-size: 26px;
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+    }
+    .main-text-header {
+        font-size: 32px;
+        color: rgb(51, 51, 51);
+    }
+    .spacer-line {
+        border-color: #f38181;
+    }
+}
+
+.lorem {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+
+.second_section_images {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.second_section_numbers {
+    // padding-top: 35px ;
+    // padding-bottom: 30px;
+    margin-top: 60px;
+    background-color: rgb(149, 225, 211);
+}
+
+.item_numbers {
+    border-right: 1px solid #b5eae0;
+}
+
+.item_numbers:last-child {
+    border: none;
+}
+
+.second_section_numbers_header {
+    padding-top: 35px;
+    font-size: 36px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.second_section_numbers_paragraph {
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+// THIRD SECTION
+.third_section {
+    padding-top: $navbar_space;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    .text-kaushan {
+        font-size: 26px;
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+    }
+    .main-text-header {
+        font-size: 32px;
+        color: rgb(51, 51, 51);
+    }
+    .spacer-line {
+        border-color: #f38181;
+    }
+}
+
+.third_section_first_row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.third_section_element {
+    h5 {
+        color: black;
+    }
+    .media-body {
+        color: #b6b6b6;
+    }
+}
+
+// FOURTH SECTION
+
+.fourth_section {
+    padding-top: $navbar_space;
+    position: relative;
+    height: 100vh;
+    background-image: url('../img-assets/bgimg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    .text-kaushan {
+        font-size: 26px;
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+    }
+    .main-text-header {
+        font-size: 32px;
+        color: rgb(51, 51, 51);
+    }
+    .spacer-line {
+        border-color: #f38181;
+    }
+
+}
+.bottom-tablet {
+    left: 50% !important;
+    transform: translate(-50%, 0);
+}
+.bottom-phone {
+    left: 65% !important;
+    transform: translate(-50%, 0);
+    margin-bottom: -120px;
+    z-index: 99;
+}
+
+
+// FIFTH SECTION
+
+.fifth_section {
+    padding-top: $navbar_space + 4rem;
+    position: relative;
+    height: 100vh;
+    background-color: white;
+    .text-kaushan {
+        font-size: 26px;
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+    }
+    .main-text-header {
+        font-size: 32px;
+        color: rgb(51, 51, 51);
+    }
+    .spacer-line {
+        border-color: #f38181;
+    }
+}
+
+
+.fifth_section_card {
+    
+    a {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    img {
+        margin-right: 10px;
+    }
+    }
+}

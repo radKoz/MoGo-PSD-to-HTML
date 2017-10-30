@@ -195,6 +195,53 @@ a:hover {
   margin-bottom: 40px;
 }
 
+.hover_image_wrapper {
+  position: relative;
+}
+
+.second_section_background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  transition: .5s ease;
+  opacity: 0;
+  background: #f38181;
+  background: -moz-linear-gradient(top, #f38181 0%, #fce38a 100%);
+  background: -webkit-linear-gradient(top, #f38181 0%, #fce38a 100%);
+  background: linear-gradient(to bottom, #f38181 0%, #fce38a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#fce38a', GradientType=0);
+  -webkit-box-shadow: 10px 10px 0px 0px #95e1d3;
+  -moz-box-shadow: 10px 10px 0px 0px #95e1d3;
+  box-shadow: 10px 10px 0px 0px #95e1d3;
+}
+
+.second_section_background:hover {
+  opacity: 0.9;
+}
+
+.second_section_hover {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.second_section_hover h3 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .second_section_numbers {
   margin-top: 60px;
   background-color: #95e1d3;
@@ -254,7 +301,7 @@ a:hover {
 .fourth_section {
   padding-top: 3.5rem;
   position: relative;
-  height: 80vh;
+  height: 90vh;
   background-image: url("../img-assets/bgimg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,12 +309,12 @@ a:hover {
 }
 
 .bottom-tablet {
-  left: 50% !important;
+  left: 28%;
   transform: translate(-50%, 0);
 }
 
 .bottom-phone {
-  left: 65% !important;
+  left: 58%;
   transform: translate(-50%, 0);
   margin-bottom: -120px;
   z-index: 99;

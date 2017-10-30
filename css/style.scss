@@ -8,10 +8,15 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Kaushan Script', cursive;
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    background-color: gray
+    background-color: white;
+    cursor: default;
 }
 
+//
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// NAVBAR
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+//
 .navbar_main {
     padding: 20px 200px;
     a {
@@ -67,6 +72,15 @@ body {
     transition: all 0.7s;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+//
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// FIRST SECTION - WELCOME TO MOGO
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+//
 .first_section {
     padding-top: $navbar_space;
     height: 100vh;
@@ -75,31 +89,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-}
-
-.text-kaushan {
-    padding-bottom: 20px;
-    font-size: 56px;
-    font-family: "Kaushan Script", cursive;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: center;
-}
-
-.main-text-header {
-    font-size: 120px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 0.933;
-    text-align: center;
-}
-
-.spacer-line {
-    margin: 40px auto;
-    border-bottom: 2px solid white;
-    width: 80px;
+    .text-kaushan {
+        font-size: 56px;
+        color: rgb(255, 255, 255);
+    }
+    .main-text-header {
+        font-size: 120px;
+        color: rgb(255, 255, 255);
+    }
+    .spacer-line {
+        border-color: white;
+    }
 }
 
 .learn-more_button {
@@ -151,29 +151,47 @@ body {
     cursor: pointer;
 }
 
-// SECOND SECTION
+//
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// SECOND SECTION - STORY ABOUT US
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+//
 .second_section {
     position: relative;
     padding-top: $navbar_space;
     height: 100vh;
     background-color: #fff;
     color: #000;
-    .text-kaushan {
-        font-size: 26px;
-        color: rgb(51, 51, 51);
-        line-height: 1.2;
-    }
-    .main-text-header {
-        font-size: 32px;
-        color: rgb(51, 51, 51);
-    }
-    .spacer-line {
-        border-color: #f38181;
-    }
+}
+
+.text-kaushan {
+    padding-bottom: 20px;
+    font-family: "Kaushan Script", cursive;
+    font-size: 26px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+
+.main-text-header {
+    font-size: 32px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    text-align: center;
+}
+
+.spacer-line {
+    margin: 40px auto;
+    border-bottom: 2px solid #f38181;
+    width: 80px;
 }
 
 .lorem {
     font-size: 18px;
+    font-style: italic;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
     line-height: 1.6;
@@ -220,24 +238,16 @@ body {
     text-align: center;
 }
 
-// THIRD SECTION
+//
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// THIRD SECTION - AMAZING SERVICES
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+//
 .third_section {
     padding-top: $navbar_space;
-    height: 100vh;
+    height: 70vh;
     background-color: white;
     color: black;
-    .text-kaushan {
-        font-size: 26px;
-        color: rgb(51, 51, 51);
-        line-height: 1.2;
-    }
-    .main-text-header {
-        font-size: 32px;
-        color: rgb(51, 51, 51);
-    }
-    .spacer-line {
-        border-color: #f38181;
-    }
 }
 
 .third_section_first_row {
@@ -256,34 +266,24 @@ body {
     }
 }
 
-// FOURTH SECTION
-
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// FOURTH SECTION - UNIQUE DESIGN
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
 .fourth_section {
     padding-top: $navbar_space;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     background-image: url('../img-assets/bgimg4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-    .text-kaushan {
-        font-size: 26px;
-        color: rgb(51, 51, 51);
-        line-height: 1.2;
-    }
-    .main-text-header {
-        font-size: 32px;
-        color: rgb(51, 51, 51);
-    }
-    .spacer-line {
-        border-color: #f38181;
-    }
-
 }
+
 .bottom-tablet {
     left: 50% !important;
     transform: translate(-50%, 0);
 }
+
 .bottom-phone {
     left: 65% !important;
     transform: translate(-50%, 0);
@@ -291,39 +291,562 @@ body {
     z-index: 99;
 }
 
-
-// FIFTH SECTION
-
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// FIFTH SECTION - WHAT WE DO
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
 .fifth_section {
-    padding-top: $navbar_space + 4rem;
+    padding-top: $navbar_space + 3rem;
     position: relative;
     height: 100vh;
     background-color: white;
-    .text-kaushan {
-        font-size: 26px;
+    .lorem {
+        margin-bottom: 0px;
+    }
+    .what_we_do_p {
+        margin-bottom: 80px;
+    }
+}
+
+.fifth_section_card {
+    z-index: 5;
+    a {
+        font-size: 18px;
+        font-family: "Montserrat";
         color: rgb(51, 51, 51);
+        text-transform: uppercase;
         line-height: 1.2;
+        img {
+            margin-right: 10px;
+        }
     }
-    .main-text-header {
-        font-size: 32px;
+    .card-header_bg {
+        background-color: white;
+    }
+}
+
+// FontAwesome -  collapse icons
+[data-toggle="collapse"] i:before {
+    content: "\f077";
+    color: #d0d0d0;
+}
+
+[data-toggle="collapse"].collapsed i:before {
+    content: "\f078";
+    color: #d0d0d0;
+}
+
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// SIXTH SECTION - QUOTE
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.sixth_section {
+    padding-top: $navbar_space;
+    position: relative;
+    height: 35vh;
+    background-color: white;
+}
+
+.service_quotes {
+    .lorem {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .text-kaushan {
+        font-size: 20px;
+    }
+}
+
+.carousel {
+    margin-bottom: 5rem;
+}
+
+.carousel-item {
+    height: 30vh;
+    background-color: #f8f8f8;
+    h1,
+    p {
         color: rgb(51, 51, 51);
     }
-    .spacer-line {
-        border-color: #f38181;
+}
+
+.quote_image {
+    padding: 35px;
+    border: 2px solid #95e1d3;
+}
+
+// workaround - bootstrap 4 color buttons
+.carousel-control-next-icon {
+    background-image: url("../img-assets/right_arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../img-assets/left_arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+// SEVENTH SECTION 
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// SEVENTH SECTION - MEET OUR TEAM 
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.seventh_section {
+    padding-top: $navbar_space;
+    height: 100vh;
+    background-color: white;
+    .lorem {
+        margin-bottom: 0px;
+    }
+    .what_we_do_p {
+        margin-bottom: 80px;
+    }
+}
+
+.single_member_card {
+    .lorem {
+        font-size: 14px;
+    }
+}
+
+.member_name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.member_card_background:hover {
+    opacity: 0.9;
+}
+
+.member_card_photo {
+    position: relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.member_card_background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    background: rgb(243, 129, 129);
+    background: -moz-linear-gradient(top, rgba(243, 129, 129, 1) 0%, rgba(252, 227, 138, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(243, 129, 129, 1) 0%, rgba(252, 227, 138, 1) 100%);
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 1) 0%, rgba(252, 227, 138, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#fce38a', GradientType=0);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+    box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+}
+
+.member_card_options {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.member_social_link {
+    font-size: 24px;
+    padding: 20px;
+    color: #f38181;
+    background-color: #fce38a;
+}
+
+.member_social_link:hover {
+    color: #fff;
+    background-color: #f38181;
+}
+
+
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// EIGHTH SECTION - COMPANIES
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.eighth_section {
+    padding-top: $navbar_space;
+    height: 25vh;
+    background-color: #f8f8f8;
+}
+
+
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// NINTH SECTION - SOME OF OUR WORK
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.ninth_section {
+    padding-top: $navbar_space;
+    height: auto;
+    background-color: white;
+}
+
+.grid_wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    .grid_item_number1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .grid_item_number2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .grid_item_number3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .grid_item_number4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .grid_item_number5 {
+        // WORKAROUND
+        height: 200%;
+        background-image: url('../img-assets/simg5.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+        grid-column: 3;
+        grid-row: 1 / 2;
+    }
+    .grid_item_number6 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .grid_item_number7 {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .grid_item {
+        position: relative;
+    }
+    .grid_item:hover .grid_item_background {
+        opacity: 0.9;
+    }
+    .grid_item_image {
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .grid_item_background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        transition: .5s ease;
+        opacity: 0;
+        cursor: pointer;
+        background: rgb(243, 129, 129);
+        background: -moz-linear-gradient(top, rgba(243, 129, 129, 1) 0%, rgba(252, 227, 138, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(243, 129, 129, 1) 0%, rgba(252, 227, 138, 1) 100%);
+        background: linear-gradient(to bottom, rgba(243, 129, 129, 1) 0%, rgba(252, 227, 138, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#fce38a', GradientType=0);
+    }
+    .grid_options {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        img {
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 12px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+        }
+        p {
+            font-size: 12px;
+            font-family: "Roboto";
+            color: rgb(255, 255, 255);
+            font-style: italic;
+            line-height: 1.6;
+            text-align: center;
+        }
     }
 }
 
 
-.fifth_section_card {
-    
-    a {
-    font-size: 18px;
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// TENTH SECTION - SECOND QUOTE
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.tenth_section {
+    margin-top: 2rem;
+    .carousel-item {
+        background-color: white;
+    }
+}
+
+.second_quote_image {
+    height: 130px;
+}
+
+// ELEVENTH SECTION
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// ELEVENTH SECTION - WHAT PEOPLE SAY
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.eleventh_section {
+    padding-top: $navbar_space;
+    height: 80vh;
+    background-color: white;
+    background-image: url('../img-assets/bgimg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    h6 {
+        font-size: 15px;
+        font-family: "Roboto";
+        color: rgb(51, 51, 51);
+        font-style: italic;
+        line-height: 1.6;
+        text-align: left;
+    }
+}
+
+.people_container {
+    margin-bottom: 4rem;
+}
+
+.spacer-line-inside {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom-width: 3px;
+}
+
+.lorem-description {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+// 12 section 
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// TWELFTH SECTION - OUR STORIES  
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.twelfth_section {
+    padding-top: $navbar_space;
+    height: 80vh;
+    background-color: white;
+}
+
+.blog_post {
+    border: none;
+}
+
+.blog_top {
+    position: relative;
+}
+
+.blog_date {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    padding: 10px 20px;
+    background-color: rgb(149, 225, 211);
+}
+
+.blog_date_number {
+    margin-bottom: 0;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.blog_date_month {
+    margin-bottom: 0;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.blog_header {
+    font-size: 14px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     line-height: 1.2;
+}
+
+.blog_text {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+
+.card-footer_theme {
+    background-color: white;
+    p {
+        font-size: 15px;
+        font-family: "Roboto";
+        color: rgb(153, 153, 153);
+        font-style: italic;
+        line-height: 1.6;
+        margin-right: 20px;
+    }
     img {
-        margin-right: 10px;
+        margin-right: 5px;
     }
+}
+
+
+
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// OPEN MAP
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+.open_map {
+    height: 25vh;
+    background-image: url('../img-assets/openMap.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    img {
+        padding: 40px 0 32px 0;
+        cursor: pointer;
     }
+    .main-text-header {
+        color: rgb(243, 129, 129);
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+    .spacer-line {
+        border-bottom-width: 4px;
+    }
+}
+
+
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+// THIRTEENTH SECTION - BEFORE FOOTER
+// <<<<<<<<<<<<<>>>>>>>>>>>>>
+
+.thirteenth_section {
+    padding-top: $navbar_space;
+    height: 60vh;
+    background-color: rgb(248, 248, 248) 
+}
+
+.card_mogo {
+    padding: 0;
+    border: none;
+    a {
+        margin-left: 3px;
+        margin-right: 0;
+    }
+    a:first-child {
+        margin-left: 20px;
+    }
+}
+
+.card_background {
+    padding: 10px 0;
+    background-color: rgb(248, 248, 248);
+}
+
+.logo-gray {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.followers-cout {
+    color: black;
+    margin-bottom: 0;
+    margin-top: 45px;
+}
+
+.your_email {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: #e6e6e6;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.btn_subscribe {
+    padding: 10px 30px;
+    background-color: #95e1d3;
+    border: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.thirteenth_title {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.other_blogs {
+    margin-top: 10px;
+}
+
+.other_blogs_header {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.lorem_small {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+}
+.laaqiq { 
+    color: #f38181;
+}
+
+.radkoz {
+    color: #95e1d3;
 }

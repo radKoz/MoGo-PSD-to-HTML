@@ -7,9 +7,11 @@ $(window).scroll(function() {
 });
 
 
-// // smooth scrolling snippet
-$('a[href*="#"]:not([href="#"]):not([data-toggle])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+// smooth scrolling snippet
+$('a[href*="#"]:not([href="#"]):not([href="#myCarousel-1"]):not([href="#myCarousel-2"]):not([data-toggle])').click(function() {
+
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname ) {
+   
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
@@ -17,6 +19,9 @@ $('a[href*="#"]:not([href="#"]):not([data-toggle])').click(function() {
                 scrollTop: target.offset().top
             }, 1000);
             return false;
-        }
+        
     }
+}
+
+
 });

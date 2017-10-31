@@ -17,13 +17,12 @@
 
     <!-- NAVBAR -->
     <div class="container justify-content-center">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar_main navbar-me">
-
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar_main navbar-me ">
             <a class="navbar-brand navbar_logo_name" href="#">MoGo</a>
 
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenuDrop" aria-controls="navbarsExampleDefault"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon toggler_icon_black"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarMenuDrop">
@@ -34,7 +33,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#amazing-services">SERVICE</a>
+                        <a class="nav-link" href="#what-we-do">SERVICE</a>
                     </li>
 
                     <li class="nav-item">
@@ -67,10 +66,10 @@
     </div>
 
     <!-- FIRST SECTION - WELCOME TO MOGO -->
-    <section class="first_section d-flex flex-column justify-content-center" id="welcome">
+    <section class="first_section d-flex flex-column  justify-content-center" id="welcome">
         <div class="container-fluid ">
             <div class="row">
-                <div class="col-8 offset-2 first_section_info ">
+                <div class="col-md-8 offset-md-2 first_section_info ">
 
                     <p class="text-kaushan">Creative Template</p>
                     <h1 class="main-text-header">WELCOME TO MOGO</h1>
@@ -78,33 +77,52 @@
                     <a href="#story-about-us">
                         <button class=" btn btn-default learn-more_button">LEARN MORE</button>
                     </a>
-                </div>
 
+                </div>
+                <div class="col-md-12">
+                    <div id="scroll_animation">
+                        <a href="#story-about-us">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-        <div class="container-fluid fix-to-bottom">
+        <div class="container-fluid fix-to-bottom ">
             <div class="row ">
                 <div class="first_section_item col-md-2 offset-md-2">
-                    <div class="spacer-line"></div>
-                    <p class="text-left">
-                        <strong>01</strong> INTRO</p>
+                    <a href="#story-about-us">
+                        <div class="spacer-line"></div>
+
+                        <p class="text-left">
+                            <strong>01</strong> INTRO</p>
+                    </a>
                 </div>
                 <div class="first_section_item col-md-2">
-                    <div class="spacer-line"></div>
-                    <p class="text-left">
-                        <strong>02</strong> WORK</p>
+                    <a href="#some-of-our-work">
+                        <div class="spacer-line"></div>
+
+                        <p class="text-left">
+                            <strong>02</strong> WORK</p>
+                    </a>
                 </div>
                 <div class="first_section_item col-md-2">
-                    <div class="spacer-line"></div>
-                    <p class="text-left">
-                        <strong>03</strong> ABOUT</p>
+                    <a href="#story-about-us">
+                        <div class="spacer-line"></div>
+
+                        <p class="text-left">
+                            <strong>03</strong> ABOUT</p>
+                    </a>
                 </div>
                 <div class="first_section_item col-md-2">
-                    <div class="spacer-line"></div>
-                    <p class="text-left">
-                        <strong>04</strong> CONTACTS</p>
+                    <a href="#contact">
+                        <div class="spacer-line"></div>
+
+                        <p class="text-left">
+                            <strong>04</strong> CONTACTS</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -117,7 +135,7 @@
     <section class="second_section" id="story-about-us">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <p class="text-kaushan">What we do</p>
                     <h1 class="main-text-header">STORY ABOUT US</h1>
                     <div class="spacer-line"></div>
@@ -130,7 +148,7 @@
 
             <div class="row second_section_images">
                 <div class="col-md-4">
-                    <div class="hover_image_wrapper">
+                    <div class="hover_image_wrapper text-center">
                         <img class="img-fluid" src="./img-assets/aboutUs1.jpg" alt="Card image cap">
                         <div class="second_section_background">
                             <div class="second_section_hover">
@@ -141,27 +159,27 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                        <div class="hover_image_wrapper">
-                            <img class="img-fluid" src="./img-assets/aboutUs2.jpg" alt="Card image cap">
-                            <div class="second_section_background">
-                                <div class="second_section_hover">
-                                    <img src="./img-assets/usersicon.png" alt="icon">
-                                    <h3>SUPER TEAM</h3>
-                                </div>
+                    <div class="hover_image_wrapper text-center">
+                        <img class="img-fluid" src="./img-assets/aboutUs2.jpg" alt="Card image cap">
+                        <div class="second_section_background">
+                            <div class="second_section_hover">
+                                <img src="./img-assets/usersicon.png" alt="icon">
+                                <h3>SUPER TEAM</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                            <div class="hover_image_wrapper">
-                                <img class="img-fluid" src="./img-assets/aboutUs3.jpg" alt="Card image cap">
-                                <div class="second_section_background">
-                                    <div class="second_section_hover">
-                                        <img src="./img-assets/usersicon.png" alt="icon">
-                                        <h3>SUPER TEAM</h3>
-                                    </div>
-                                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="hover_image_wrapper text-center">
+                        <img class="img-fluid" src="./img-assets/aboutUs3.jpg" alt="Card image cap">
+                        <div class="second_section_background">
+                            <div class="second_section_hover">
+                                <img src="./img-assets/usersicon.png" alt="icon">
+                                <h3>SUPER TEAM</h3>
                             </div>
                         </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -198,14 +216,14 @@
 
     <section class="third_section" id="amazing-services">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row margin_cleaner">
+                <div class="col-md-12">
                     <p class="text-kaushan">We work with</p>
                     <h1 class="main-text-header">AMAZING SERVICES</h1>
                     <div class="spacer-line"></div>
                 </div>
                 <div class="row third_section_first_row">
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="media third_section_element">
                             <img class="mr-3" src="./img-assets/alarmicon.png" alt="Generic placeholder image">
                             <div class="media-body">
@@ -214,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="media third_section_element">
                             <img class="mr-3" src="./img-assets/graph.png" alt="Generic placeholder image">
                             <div class="media-body">
@@ -223,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="media third_section_element">
                             <img class="mr-3" src="./img-assets/computericon.png" alt="Generic placeholder image">
                             <div class="media-body">
@@ -236,7 +254,7 @@
                 </div>
 
                 <div class="row third_section_second_row">
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="media third_section_element">
                             <img class="mr-3" src="./img-assets/seoicon.png" alt="Generic placeholder image">
                             <div class="media-body">
@@ -245,7 +263,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="media third_section_element">
                             <img class="mr-3" src="./img-assets/homeicon.png" alt="Generic placeholder image">
                             <div class="media-body">
@@ -254,7 +272,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="media third_section_element">
                             <img class="mr-3" src="./img-assets/digitalicon.png" alt="Generic placeholder image">
                             <div class="media-body">
@@ -274,7 +292,7 @@
     <section class="fourth_section" id="unique-design">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <p class="text-kaushan">For all devices</p>
                     <h1 class="main-text-header">UNIQUE DESIGN</h1>
                     <div class="spacer-line"></div>
@@ -294,7 +312,7 @@
     <section class="fifth_section" id="what-we-do">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <p class="text-kaushan">Service</p>
                     <h1 class="main-text-header">WHAT WE DO</h1>
                     <div class="spacer-line"></div>
@@ -306,11 +324,11 @@
             </div>
 
             <div class="row">
-                <div class="col-6 px-0 animation-from-left">
+                <div class="col-md-6 px-0 animation-from-left what_we_do_image">
                     <img src="./img-assets/fiifthsectionphoto.jpg" alt="stock photo" class="img-fluid">
                 </div>
 
-                <div class="col-6 px-4 animation-from-right">
+                <div class="col-md-6 px-4 animation-from-top">
                     <div id="accordion" role="tablist">
                         <div class="card fifth_section_card">
                             <div class="card-header card-header_bg" role="tab" id="headingOne">
@@ -385,25 +403,24 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col  pl-0 pr-0">
-                    <div class="service_quotes">
-                        <div id="myCarousel-1" class="carousel slide " data-ride="carousel">
+                    <div class="service_quotes ">
+                        <div id="myCarousel-1" class="carousel slide  " data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#myCarousel-1" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel-1" data-slide-to="1"></li>
                                 <li data-target="#myCarousel-1" data-slide-to="2"></li>
                             </ol>
-                            <div class="carousel-inner ">
+                            <div class="carousel-inner  ">
                                 <div class="carousel-item active ">
 
-                                    <div class="container">
-                                        <div class="carousel-caption text-left">
+                                    <div class="container ">
+                                        <div class="carousel-caption text-left ">
                                             <div class="media">
                                                 <img class="mr-5 quote_image d-block" src="./img-assets/section5_quote.png" alt="Generic placeholder image">
                                                 <div class="media-body">
 
                                                     <p class="lorem">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                        veniam, quis nostrud exercitation.”</p>
+                                                        tempor incididunt ut labore et dolore magna aliqua.”</p>
                                                     <div class="float-left mr-3">
                                                         <img src="./img-assets/red-spacer.png" alt="" class="img-fluid">
                                                     </div>
@@ -425,8 +442,7 @@
                                                 <div class="media-body">
 
                                                     <p class="lorem">“Veniam excepteur anim laboris fugiat pariatur sit do pariatur veniam
-                                                        tempor incididunt nulla. Incididunt est dolor incididunt aliquip
-                                                        dolore adipisicing. Est aliqua incididunt ut id anim pariatur.”</p>
+                                                        tempor incididunt nulla amet laborum labore adipiscing elit.”</p>
                                                     <div class="float-left mr-3">
                                                         <img src="./img-assets/red-spacer.png" alt="" class="img-fluid">
                                                     </div>
@@ -445,16 +461,13 @@
                                                 <img class="mr-5 quote_image d-block" src="./img-assets/section5_quote.png" alt="Generic placeholder image">
                                                 <div class="media-body">
 
-                                                    <p class="lorem">“Lorem anim consequat duis sit ex mollit nisi sunt nulla non officia
-                                                        aliqua dolor. Incididunt aliqua tempor occaecat consequat amet dolor
-                                                        est adipisicing enim aute pariatur sunt. Sit est qui irure velit
-                                                        commodo.”
-                                                    </p>
+                                                    <p class="lorem">“Quis id anim deserunt amet laborum labore nisi nostrud et deserunt.
+                                                        Lorem commodo magna id cupidatat anola it buronu.”</p>
                                                     <div class="float-left mr-3">
                                                         <img src="./img-assets/red-spacer.png" alt="" class="img-fluid">
                                                     </div>
 
-                                                    <p class=" float-left text-kaushan">Den Jen</p>
+                                                    <p class=" float-left text-kaushan">Dan Joe</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -486,7 +499,7 @@
     <section class="seventh_section" id="meet-our-team">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <p class="text-kaushan">Who we are</p>
                     <h1 class="main-text-header">MEET OUR TEAM</h1>
                     <div class="spacer-line"></div>
@@ -495,8 +508,8 @@
                         ex ea commodo consequat. </p>
                 </div>
 
-                <div class="row">
-                    <div class="col-4 single_member_card animation-from-top">
+                <div class="row margin_cleaner  text-center">
+                    <div class="col-md-4 single_member_card animation-from-top">
                         <div class="member_card_photo">
                             <img src="./img-assets/matthewdix.jpg" alt="team member photo" class="img-fluid">
                             <div class="member_card_background">
@@ -519,7 +532,7 @@
                         <h2 class="member_name text-center mt-3">MATTHEW DIX</h2>
                         <p class="lorem text-center">Grahpic Design</p>
                     </div>
-                    <div class="col-4 single_member_card animation-from-top">
+                    <div class="col-md-4 single_member_card animation-from-top">
                         <div class="member_card_photo">
                             <img src="./img-assets/chriscampbell.jpg" alt="team member photo" class="img-fluid">
                             <div class="member_card_background">
@@ -542,7 +555,7 @@
                         <h2 class="member_name text-center mt-3">CHRISTOPHER CAMPBELL</h2>
                         <p class="lorem text-center">Branding/UX design</p>
                     </div>
-                    <div class="col-4 single_member_card animation-from-top">
+                    <div class="col-md-4 single_member_card animation-from-top">
                         <div class="member_card_photo">
                             <img src="./img-assets/michaelfertig.jpg" alt="team member photo" class="img-fluid">
                             <div class="member_card_background">
@@ -578,8 +591,8 @@
     <section class="eighth_section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 justify-content-center">
-                    <img src="./img-assets/companies.png" alt="company stock photo" class=" mx-auto d-block companies_logos">
+                <div class="col-md-12 justify-content-center">
+                    <img src="./img-assets/companies.png" alt="company stock photo" class=" img-fluid mx-auto d-block companies_logos">
                 </div>
 
             </div>
@@ -590,7 +603,7 @@
     <section class="ninth_section" id="some-of-our-work">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <p class="text-kaushan">What we do</p>
                     <h1 class="main-text-header">SOME OF OUR WORK</h1>
                     <div class="spacer-line"></div>
@@ -602,7 +615,7 @@
 
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <div class="grid_wrapper">
                         <div class="grid_item grid_item_number1">
                             <img src="./img-assets/simg1.jpg" alt="our work image" class="img-fluid grid_item_image">
@@ -753,8 +766,7 @@
 
                                                     <p class="lorem">“Lorem anim consequat duis sit ex mollit nisi sunt nulla non officia
                                                         aliqua dolor. Incididunt aliqua tempor occaecat consequat amet dolor
-                                                        est adipisicing enim aute pariatur sunt. Sit est qui irure velit
-                                                        commodo.”
+                                                        est adipisicing enim aute pariatur sunt. ”
                                                     </p>
                                                     <div class="float-left mr-3">
                                                         <img src="./img-assets/red-spacer.png" alt="" class="img-fluid">
@@ -792,14 +804,14 @@
     <section class="eleventh_section" id="what-people-say">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <p class="text-kaushan">Happy Clients</p>
                     <h1 class="main-text-header">WHAT PEOPLE SAY</h1>
                     <div class="spacer-line"></div>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-6 ">
+                <div class="col-md-6 ">
                     <div class="people_container ">
                         <div class="media">
                             <img class="mr-3" src="./img-assets/person1.png" alt="Generic placeholder image">
@@ -825,7 +837,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="people_container">
                         <div class="media">
                             <img class="mr-3" src="./img-assets/person3.png" alt="Generic placeholder image">
@@ -860,14 +872,14 @@
     <section class="twelfth_section" id="latest-blog">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <p class="text-kaushan">Our stories</p>
                     <h1 class="main-text-header">LATEST BLOG</h1>
                     <div class="spacer-line"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <div class="card-deck">
                         <div class="card blog_post">
                             <div class="blog_top">
@@ -942,7 +954,7 @@
     <!-- Open Map -->
     <section>
         <div class="container-fluid px-0">
-            <div class="col-12 open_map">
+            <div class="col-md-12 open_map">
                 <a href="https://github.com/radKoz">
                     <img src="./img-assets/openmapicon.png" alt="map icon" class="mx-auto d-block open_map_icon">
                     <h1 class="main-text-header">OPEN MAP</h1>
@@ -957,7 +969,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card card_mogo">
 
                         <div class="card-body card_background">
@@ -1009,7 +1021,7 @@
 
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h2 class="thirteenth_title">BLOGS</h2>
                     <div class="media other_blogs my-3">
                         <img class="align-self-center mr-3" src="./img-assets/blogs_1.jpg" alt="Generic placeholder image">
@@ -1033,9 +1045,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 instagram_box">
                     <h2 class="thirteenth_title">INSTAGRAM</h2>
-                    <div class="d-flex p-2 flex-wrap">
+                    <div class="d-flex p-2 flex-wrap instagram_box_2 ">
                         <a href="https://github.com/radKoz">
                             <img src="./img-assets/photos-78841zcS1oLCjBr4.jpg" alt="instagram thumbnail" class="img-fluid m-1">
                         </a>
@@ -1074,12 +1086,12 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <p>&copy; 2016 MoGo free PSD template by
                         <span class="laaqiq">Laaqiq</span>
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <p> Converted to HTML by
                         <a href="https://github.com/radKoz">
                             <span class="radkoz">Radosław Kozłowski</span>

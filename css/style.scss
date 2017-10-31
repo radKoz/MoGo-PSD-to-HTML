@@ -76,6 +76,20 @@ a:hover {
     text-decoration: none;
 }
 
+@media (max-width: 991px) {
+    .navbar_main {
+        padding: 15px;
+    }
+    .navbar_logo_name {
+        font-size: 14px;
+    }
+    .fixed-me {
+        .toggler_icon_black {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+}
+
 //
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // FIRST SECTION - WELCOME TO MOGO
@@ -134,11 +148,13 @@ a:hover {
 }
 
 .first_section_item {
-    color: rgba(255, 255, 255, 0.702);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     transition: all 100ms ease-in-out;
+    a {
+        color: rgba(255, 255, 255, 0.702);
+    }
 }
 
 .first_section_item:hover {
@@ -148,7 +164,65 @@ a:hover {
     .spacer-line {
         border-color: #d51e1e;
     }
-    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .first_section {
+        height: 100vh;
+        .text-kaushan {
+            font-size: 20px;
+        }
+        .main-text-header {
+            font-size: 28px;
+        }
+    }
+    .first_section_item {
+        display: none;
+    }
+    .learn-more_button {
+        margin-bottom: 40px;
+    }
+    #scroll_animation a span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+        -webkit-animation: sdb06 1.5s infinite;
+        animation: sdb06 1.5s infinite;
+        box-sizing: border-box;
+    }
+    @-webkit-keyframes sdb06 {
+        0% {
+            -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
+    }
+    @keyframes sdb06 {
+        0% {
+            transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
+    }
 }
 
 //
@@ -249,8 +323,6 @@ a:hover {
 }
 
 .second_section_numbers {
-    // padding-top: 35px ;
-    // padding-bottom: 30px;
     margin-top: 60px;
     background-color: rgb(149, 225, 211);
 }
@@ -284,6 +356,47 @@ a:hover {
     text-align: center;
 }
 
+@media (max-width: 1199px) {
+    .second_section {
+        height: 900px;
+    }
+}
+
+@media (max-width: 991px) {
+    .second_section {
+        height: auto;
+    }
+    .text-kaushan {
+        padding-bottom: 20px;
+    }
+    .main-text-header {
+        font-size: 32px;
+    }
+    .lorem {
+        font-size: 16px;
+    }
+    .second_section_numbers {
+        display: none;
+    }
+    .second_section_images {
+        img {
+            margin: 10px auto;
+        }
+    }
+    .hover_image_wrapper {
+        position: relative;
+        margin: 10px 64px;
+    }
+    .second_section_background:hover {
+        opacity: 0.9;
+    }
+    .second_section_hover {
+        h3 {
+            font-size: 14px;
+        }
+    }
+}
+
 //
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // THIRD SECTION - AMAZING SERVICES
@@ -312,6 +425,31 @@ a:hover {
     }
 }
 
+@media (max-width: 1199px) {
+    .third_section {
+        padding-top: $navbar_space;
+        height: auto;
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .third_section {
+        padding-top: $navbar_space;
+        height: auto;
+        background-color: white;
+        color: black;
+    }
+    .third_section_element {
+        margin: 5px;
+    }
+    .third_section_first_row {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // FOURTH SECTION - UNIQUE DESIGN
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
@@ -323,29 +461,90 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
+    margin-bottom: 80px;
 }
 
 .bottom-tablet {
     // scrollReveal bugs position
-    left: 28%;
+    left: 26%;
     transform: translate(-50%, 0);
+    position: absolute;
+    bottom: 0;
+    height: 70vh;
 }
 
 .bottom-phone {
-    left: 58% ;
+    left: 58%;
     transform: translate(-50%, 0);
     margin-bottom: -120px;
     z-index: 99;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 1199px) {
+    .fourth_section {
+        margin-bottom: 80px;
+        height: 70vh;
+    }
+    .bottom-tablet {
+        // scrollReveal bugs position
+        left: 32%;
+        height: 45vh;
+    }
+    .bottom-phone {
+        left: 50%;
+        margin-bottom: -120px;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 991px) {
+    .fourth_section {
+        height: 80vh;
+    }
+    .bottom-tablet {
+        // scrollReveal bugs position
+        left: 25%;
+        height: 50vh;
+    }
+    .bottom-phone {
+        left: 58%;
+        margin-bottom: -90px;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .fourth_section {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px) {
+    .fourth_section {
+        height: 90vh;
+    }
+    .bottom-tablet {
+        // scrollReveal bugs position
+        left: 37%;
+    }
+    .bottom-phone {
+        left: 57%;
+        margin-bottom: -120px;
+        z-index: 99;
+    }
 }
 
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // FIFTH SECTION - WHAT WE DO
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 .fifth_section {
-    padding-top: $navbar_space + 3rem;
+    padding-top: $navbar_space;
     position: relative;
-    height: 100vh;
+    height: auto;
     background-color: white;
+    margin-bottom: 40px;
     .lorem {
         margin-bottom: 0px;
     }
@@ -382,13 +581,31 @@ a:hover {
     color: #d0d0d0;
 }
 
+@media (max-width: 767px) {
+    .fifth_section {
+        padding-top: $navbar_space;
+        height: auto;
+    }
+    .fifth_section_card {
+        a {
+            font-size: 16px;
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+    .what_we_do_image {
+        display: none;
+    }
+}
+
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // SIXTH SECTION - QUOTE
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 .sixth_section {
     padding-top: $navbar_space;
     position: relative;
-    height: 35vh;
+    height: auto;
     background-color: white;
 }
 
@@ -408,17 +625,12 @@ a:hover {
 }
 
 .carousel-item {
-    height: 30vh;
+    height: 250px;
     background-color: #f8f8f8;
     h1,
     p {
         color: rgb(51, 51, 51);
     }
-}
-
-.quote_image {
-    padding: 35px;
-    border: 2px solid #95e1d3;
 }
 
 // workaround - bootstrap 4 color buttons
@@ -436,14 +648,27 @@ a:hover {
     background-position: fixed;
 }
 
-// SEVENTH SECTION 
+@media (max-width: 1199px) {
+    .carousel-item {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sixth_section {
+        display: none;
+    }
+}
+
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // SEVENTH SECTION - MEET OUR TEAM 
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 .seventh_section {
     padding-top: $navbar_space;
-    height: 100vh;
+    height: auto;
     background-color: white;
+    margin-bottom: 30px;
     .lorem {
         margin-bottom: 0px;
     }
@@ -518,13 +743,49 @@ a:hover {
     background-color: #f38181;
 }
 
+@media (max-width: 991px) {
+    .seventh_section {
+        padding-bottom: 40px;
+        height: auto;
+    }
+    .member_social_link {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .seventh_section {
+        height: auto;
+    }
+    .member_card_photo {
+        margin: 10px 64px;
+    }
+    .margin_cleaner {
+        margin: 0;
+    }
+}
+
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // EIGHTH SECTION - COMPANIES
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 .eighth_section {
-    padding-top: $navbar_space;
-    height: 25vh;
+    padding-top: 20px;
+    height: 170px;
     background-color: #f8f8f8;
+}
+
+@media (max-width: 1199px) {
+    .eighth_section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .eighth_section {
+        display: none;
+    }
 }
 
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
@@ -633,6 +894,29 @@ a:hover {
     }
 }
 
+@media (max-width: 991px) {
+    .grid_wrapper {
+        margin-bottom: 30px;
+        .grid_options {
+            h3 {
+                font-size: 10px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .grid_wrapper {
+        margin-bottom: 30px;
+    }
+    .grid_item_background {
+        display: none;
+    }
+}
+
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // TENTH SECTION - SECOND QUOTE
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
@@ -647,14 +931,18 @@ a:hover {
     height: 130px;
 }
 
-// ELEVENTH SECTION
+@media (max-width: 767px) {
+    .tenth_section {
+        display: none;
+    }
+}
+
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // ELEVENTH SECTION - WHAT PEOPLE SAY
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 .eleventh_section {
     padding-top: $navbar_space;
-    height: 80vh;
-    background-color: white;
+    height: auto;
     background-image: url('../img-assets/bgimg4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -687,9 +975,8 @@ a:hover {
     line-height: 1.6;
 }
 
-// 12 section 
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
-// TWELFTH SECTION - OUR STORIES  
+// TWELFTH SECTION - LATEST BLOG
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 .twelfth_section {
     padding-top: $navbar_space;
@@ -766,6 +1053,14 @@ a:hover {
     }
 }
 
+@media (max-width: 1199px) {
+    .twelfth_section {
+        padding-top: $navbar_space;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
 // OPEN MAP
 // <<<<<<<<<<<<<>>>>>>>>>>>>>
@@ -786,6 +1081,36 @@ a:hover {
     }
     .spacer-line {
         border-bottom-width: 4px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .open_map {
+        height: auto;
+        img {
+            padding: 20px 0 40px 0;
+        }
+        .main-text-header {
+            padding-bottom: 40px;
+        }
+        .spacer-line {
+            display: none
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .open_map {
+        height: auto;
+        img {
+            padding: 40px 0 40px 0;
+        }
+        .main-text-header {
+            padding-bottom: 40px;
+        }
+        .spacer-line {
+            display: none
+        }
     }
 }
 
@@ -882,6 +1207,7 @@ a:hover {
 .footer {
     background-color: #f8f8f8;
     border-bottom: 1px solid #e5e5e5;
+    text-align: center;
 }
 
 .laaqiq {
@@ -890,4 +1216,70 @@ a:hover {
 
 .radkoz {
     color: #95e1d3;
+}
+
+@media (max-width: 1199px) {
+    .thirteenth_section {
+        height: auto;
+    }
+    .instagram_box_2 {
+        flex-flow: row;
+        img {
+            width: auto;
+            margin: 0 !important;
+        }
+    }
+    .your_email {
+        font-size: 10px;
+    }
+    .btn_subscribe {
+        padding: 10px 10px;
+        background-color: #95e1d3;
+        border: none;
+        font-size: 12px;
+    }
+    .card_mogo {
+        a {
+            margin-left: 3px;
+            margin-right: 0;
+        }
+        a:first-child {
+            margin-left: 1px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .thirteenth_section {
+        height: auto;
+    }
+    .your_email {
+        font-size: 10px;
+    }
+    .btn_subscribe {
+        padding: 10px 20px;
+        background-color: #95e1d3;
+        border: none;
+        font-size: 12px;
+    }
+    .card_mogo {
+        a {
+            margin-left: 3px;
+            margin-right: 0;
+        }
+        a:first-child {
+            margin-left: 1px;
+        }
+    }
+    .thirteenth_title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .instagram_box {
+        display: none;
+    }
+    .footer {
+        padding-top: 40px;
+    }
 }

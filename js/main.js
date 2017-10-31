@@ -6,6 +6,10 @@ $(window).scroll(function () {
     }
 });
 
+// auto collapse navbar
+$('.navbar-nav>li>a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+});
 
 // smooth scrolling snippet
 $('a[href*="#"]:not([href="#"]):not([href="#myCarousel-1"]):not([href="#myCarousel-2"]):not([data-toggle])').click(function () {
@@ -31,6 +35,8 @@ window.sr = ScrollReveal({
     reset: false
 
 });
+
+
 
 sr.reveal('.second_section_numbers', {
     beforeReveal: function (second_section_numbers) {
